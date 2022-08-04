@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+
+app_name = 'polls'
 urlpatterns = [
     path('', views.index, name='index'),
     #views.py에 있는 파라미터와 같아야하는 question_id
